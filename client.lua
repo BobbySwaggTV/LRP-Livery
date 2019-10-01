@@ -1,0 +1,5 @@
+RegisterCommand('livery', function(source, args)
+    local Veh = GetVehiclePedIsUsing(GetPlayerPed(-1))
+    local liveryID = tonumber(args[1])
+    SetVehicleLivery(Veh, liveryID)
+end, false)
